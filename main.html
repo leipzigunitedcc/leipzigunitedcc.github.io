@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golf club</title>
+</head>
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background-image: url("template.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .left {
+        display: inline-block;
+        /* border:2px solid red; */
+        position: absolute;
+        left: -12px;
+        top: -5px;
+    }
+
+    .left img {
+        width: 125px;
+        filter: invert(100%);
+    }
+
+    .mid {
+        display: block;
+        width: 45%;
+        margin: 12px auto;
+        /* border: 2px solid green; */
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 15px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: rgb(63, 62, 56);
+        text-decoration: dotted;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgba(3, 91, 34, 0.516);
+    }
+
+    .btn {
+        margin: 0px 9px;
+        color: rgb(0, 0, 0);
+        padding: 4px 14px;
+        border: 15px;
+        border-radius: 5px;
+        font-size: 23px;
+        background-color: rgb(241, 232, 232);
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .btn {
+        background-color: rgba(235, 171, 171, 0.242);
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .container {
+        border: 2px solid rgb(198, 241, 234);
+        margin: 115px 896px;
+        padding: 2px 2px;
+        width: 33%;
+        border-radius: 10px;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 404px;
+        padding: 1px;
+        margin: 3px auto;
+        border: 2px solid green;
+        font-size: 20px;
+        border-radius: 5px;
+        font-family: 'Times New Roman', Times, serif;
+
+    }
+
+    .container h1 {
+        text-align: center;
+        color: rgb(28, 26, 26);
+        text-decoration: none;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- lest div for logo -->
+        <div class="left">
+            <img src="golf.logo.png" alt="">
+        </div>
+        <!-- mid div for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Membership</a></li>
+            </ul>
+        </div>
+        <!-- right div for buttons -->
+        <div class="right">
+            <a href="loginpage.html"><button class="btn">Log in</button></a>
+            <a href="signup.html"><button class="btn">Sign up</button></a>
+        </div>
+        <!--this div is for the form-->
+        <div class="container">
+            <h1>Register Now</h1>
+            <form action="noaction.php">
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Name">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Age">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Gender">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your phone number ">
+
+            </form>
+        </div>
+
+        <div class="btn">
+            <button class="class">Submit</button>
+        </div>
+</body>
+
+</html>

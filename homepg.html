@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golf club</title>
+
+    <link rel="stylesheet" href="homepg.css">
+
+    
+
+</head>
+<style>
+    body{
+        margin:0px;
+        padding:0px;
+        background-image: url("template.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        }
+        .left{
+            display:inline-block;
+            /* border:2px solid red; */
+            position: absolute;
+            left: 25px;
+            top: 15px;
+        }
+        .left img{
+            width: 125px;
+            filter: invert(100%);
+        }
+
+        .mid{
+            display: block;
+            width: 45%;
+            margin: 12px auto;
+            /* border: 2px solid green; */
+        }
+        .right{
+            position: absolute;
+            right: 34px;
+            top: 15px;
+            display: inline-block;
+            /* border: 2px solid yellow; */
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 20px;
+        }
+        .navbar li a{
+            color: rgb(175, 210, 243);
+            text-decoration:dotted;
+            padding: 34px 23px;
+        }
+        .navbar li a:hover,
+        .navbar li a.active{
+            text-decoration: underline;
+            color: rgb(224, 72, 72);
+        }
+        .btn{
+            margin: 0px 9px;
+            color:grey;
+            padding: 4px 14px;
+            border: 2px ;
+            border-radius: 10px;
+            font-size: 18px;
+            background-color: rgb(241, 232, 232);
+            font-family: 'Times New Roman', Times, serif;
+           }
+           .btn{
+            background-color: rgba(235, 171, 171, 0.242);
+            cursor: pointer;
+           }
+           .container{
+            border: 2px solid rgb(198, 241, 234);
+            margin: 115px 896px;
+            padding: 2px 2px;
+            width: 33%;
+            border-radius: 10px;
+            }
+            .form-group input{
+                text-align: center;
+                display: block;
+                width: 404px;
+                padding: 1px;
+                margin: 3px auto;
+                border: 2px solid green;
+                font-size: 20px;
+                border-radius: 30px;
+                font-family: 'Times New Roman', Times, serif;
+                
+            }
+            .container h1{
+                text-align: center;
+                color: rgb(87, 18, 18);
+                text-decoration: none;
+            }
+            .btn{
+                text-align: center;
+                font-size: 22px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            
+</style>
+<body>
+    <header class="header">
+        <!-- lest div for logo -->
+        <div class="left">
+            <img src="golf.logo.png" alt="">
+        </div>
+        <!-- mid div for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+               <a href="main.html"><li><a href="#">Home</a></li></a>
+               <li><a href="#">About Us</a></li>
+               <li><a href="#">Events</a></li>
+               <li><a href="#">Membership</a></li>
+            </ul>  
+        </div>
+        <!-- right div for buttons -->
+        <div class="right">
+            <button class="btn">Log in</button>
+            <button class="btn">Sign up</button>
+        </div>
+        <!--this div is for the form-->
+        <div class="container">
+            <h1>Join The Golf Club Now</h1>
+            <form action="noaction.php">
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Name">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Age">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Gender">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your phone number ">
+                
+            </form>
+        </div>
+
+        <div class="btn">
+            <button class="class">Submit</button>
+        </div>        
+</body>
+</html>
